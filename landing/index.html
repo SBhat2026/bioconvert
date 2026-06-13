@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BioConvert — bioinformatics file conversion, instantly</title>
+  <meta name="description" content="Convert VCF, GTF, GFF3, FASTA and TSV files in seconds. No installs, no scripts." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+
+  <header class="border-b border-slate-800">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-5">
+      <span class="font-semibold text-lg">Bio<span class="text-sky-400">Convert</span></span>
+      <a href="#pricing" class="text-sm text-slate-300 hover:text-white">Pricing</a>
+    </nav>
+    <div class="max-w-3xl mx-auto px-6 py-24 text-center">
+      <span class="inline-block mb-5 text-xs font-medium uppercase tracking-widest text-sky-400">For wet-lab & dry-lab researchers</span>
+      <h1 class="text-4xl sm:text-5xl font-bold leading-tight">
+        Convert bioinformatics files in seconds — no scripts, no installs.
+      </h1>
+      <p class="mt-6 text-lg text-slate-300">
+        Drop a VCF, GTF, GFF3, FASTA, or TSV. Get the format you actually need,
+        with INFO fields flattened and IDs handled correctly.
+      </p>
+      <div class="mt-9 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="#email" class="rounded-lg bg-sky-500 px-6 py-3 font-medium text-slate-950 hover:bg-sky-400">Get early access</a>
+        <a href="#pricing" class="rounded-lg border border-slate-700 px-6 py-3 font-medium hover:border-slate-500">See pricing</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="max-w-5xl mx-auto px-6 py-20">
+    <h2 class="text-center text-2xl font-semibold">Supported conversions</h2>
+    <div class="mt-10 grid gap-4 sm:grid-cols-2">
+      <div class="rounded-xl border border-slate-800 p-5"><h3 class="font-semibold text-sky-400">VCF → TSV</h3><p class="mt-1 text-sm text-slate-300">Flatten every INFO key into its own column.</p></div>
+      <div class="rounded-xl border border-slate-800 p-5"><h3 class="font-semibold text-sky-400">GTF ↔ GFF3</h3><p class="mt-1 text-sm text-slate-300">Both directions, with correct ID/Parent handling.</p></div>
+      <div class="rounded-xl border border-slate-800 p-5"><h3 class="font-semibold text-sky-400">FASTA → stats</h3><p class="mt-1 text-sm text-slate-300">Per-sequence length, GC%, and N count.</p></div>
+      <div class="rounded-xl border border-slate-800 p-5"><h3 class="font-semibold text-sky-400">TSV → GTF</h3><p class="mt-1 text-sm text-slate-300">Turn an annotation table into valid GTF.</p></div>
+    </div>
+    <p class="mt-6 text-center text-sm text-slate-500">More formats (BAM, BED, liftover) on the roadmap.</p>
+  </section>
+
+  <section id="pricing" class="border-y border-slate-800 bg-slate-900/40">
+    <div class="max-w-5xl mx-auto px-6 py-20">
+      <h2 class="text-center text-2xl font-semibold">Pricing</h2>
+      <div class="mt-10 grid gap-5 sm:grid-cols-3">
+        <div class="rounded-xl border border-slate-800 p-7 bg-slate-950">
+          <h3 class="font-semibold">Free</h3>
+          <p class="mt-3 text-3xl font-bold">$0</p>
+          <ul class="mt-5 space-y-2 text-sm text-slate-300"><li>Single-file preview</li><li>All conversions</li></ul>
+        </div>
+        <div class="rounded-xl border-2 border-sky-500 p-7 bg-slate-950">
+          <h3 class="font-semibold">Pro</h3>
+          <p class="mt-3 text-3xl font-bold">$<span>Y</span><span class="text-base text-slate-400">/mo</span></p>
+          <ul class="mt-5 space-y-2 text-sm text-slate-300"><li>Full-file downloads</li><li>Batch (zip) conversion</li><li>No row limits</li></ul>
+          <a href="#" class="mt-6 block rounded-lg bg-sky-500 px-4 py-2 text-center text-sm font-medium text-slate-950 hover:bg-sky-400">Choose</a>
+        </div>
+        <div class="rounded-xl border border-slate-800 p-7 bg-slate-950">
+          <h3 class="font-semibold">Pay per file</h3>
+          <p class="mt-3 text-3xl font-bold">$<span>Z</span></p>
+          <ul class="mt-5 space-y-2 text-sm text-slate-300"><li>One full download</li><li>No subscription</li></ul>
+          <a href="#" class="mt-6 block rounded-lg border border-slate-700 px-4 py-2 text-center text-sm hover:border-slate-500">Choose</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="email" class="max-w-xl mx-auto px-6 py-20 text-center">
+    <h2 class="text-2xl font-semibold">Get notified at launch</h2>
+    <form action="https://example.com/api/subscribe" method="POST" class="mt-6 flex flex-col sm:flex-row gap-3">
+      <input type="email" name="email" required placeholder="you@lab.edu" class="flex-1 rounded-lg bg-slate-900 border border-slate-700 px-4 py-3 text-sm focus:border-sky-500 focus:outline-none" />
+      <button class="rounded-lg bg-sky-500 px-6 py-3 text-sm font-medium text-slate-950 hover:bg-sky-400">Notify me</button>
+    </form>
+  </section>
+
+  <footer class="border-t border-slate-800 py-8 text-center text-sm text-slate-500">
+    BioConvert · file formats shouldn't cost you an afternoon.
+  </footer>
+</body>
+</html>

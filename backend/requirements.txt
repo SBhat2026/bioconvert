@@ -1,0 +1,8 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+pytest>=8.0
+# Optional, for heavy/edge-case real-world files (pure-Python works without them):
+# pysam>=0.22        # BAM/VCF at scale
+# gffutils>=0.12     # robust GTF/GFF3
+# biopython>=1.83
